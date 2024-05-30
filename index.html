@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Add your favicon link here -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">ShortLink Hub</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>ShortLink Hub</h1>
+        <p>Make your links more manageable and memorable with our ShortLink Hub.</p>
+        <div class="url-input">
+            <input type="url" id="urlInput" placeholder="Enter URL" style="color: rgb(214, 209, 209);">
+            <button onclick="shortenURL()" id="shortenBtn">Shorten</button>
+        </div>
+        <div id="result" style="display: none;">
+            <p style="font: larger;">Shortened URL:</p>
+            <a href="" target="_blank" id="shortenedURL" ></a>
+            <button onclick="copyToClipboard()">Copy</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 ShortLink Hub. All rights reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

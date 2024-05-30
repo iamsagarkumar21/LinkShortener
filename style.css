@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* here is Body styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Navbar styles */
+header {
+    background: rgb(0 4 92 / 69%);
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    padding-right: 50px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3aa5e7;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Main container */
+.main {
+    flex: 1;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(216, 217, 244, 0.897);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    background-color: rgba(71, 92, 131, 0.368);
+    margin: 50px auto;
+    backdrop-filter: blur(10px);
+}
+
+/* Heading styles */
+.main h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color:rgb(255, 255, 255);
+}
+.main p{
+    color: rgb(255, 255, 255);
+}
+/* URL input styles */
+.url-input {
+    margin: 20px 0;
+}
+
+.url-input input,
+.url-input button {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.url-input input {
+    background-color: transparent;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.url-input input:focus {
+    border-color: #3aa5e7;
+}
+
+/* Shorten button styles */
+.url-input button {
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3aa5e7;
+    color: #fff;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.url-input button:hover {
+    background-color: #065485;
+}
+
+/* Result container styles */
+#result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#result a{
+    color: rgb(43, 0, 255); font-size: medium ; font-weight: 600; 
+}
+
+#result button {
+    width: 100%;
+    background-color: #3aa5e7;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #065485;
+}
+
+#result button:hover {
+    background-color: #065485;
+}
+
+/* Footer styles */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+
+/* here is Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
