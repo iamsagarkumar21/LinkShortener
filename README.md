@@ -52,7 +52,7 @@ To run the application locally, follow these steps:
   <li>Node.js: For server-side JavaScript runtime environment.</li>
   <li>Express.js: Web application framework for Node.js.</li>
   <li>MongoDB: NoSQL database for storing URLs and their shortened versions.</li>
-  <li>Edamam Recipe API: For retrieving recipe data.</li>
+  <li>API's</li>
 </ul>
 
 ## Acknowledgements 
