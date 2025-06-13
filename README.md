@@ -1,4 +1,4 @@
-# CodeClauseInternship_LinkShortener
+# LinkShortener
 Welcome to CodeClauseInternship_LinkShortener project! This is a simple URL shortener application developed during my internship at CodeClause.
 
 ## Table of Contents
